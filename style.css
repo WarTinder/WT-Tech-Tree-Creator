@@ -317,8 +317,8 @@ a {
 
 .folderNumber {
 	position: absolute;
-	top: -1px;
-	right: -1px;
+	top: 0px;
+	right: 0px;
 	border: none;
 	background: url("https://i.imgur.com/pqSKFUk.png");
 	background-size: contain;
