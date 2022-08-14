@@ -317,7 +317,7 @@ a {
 
 .folderNumber {
 	position: absolute;
-	top: -5px;
+	top: -4px;
 	right: 0px;
 	border: none;
 	background: url("https://i.imgur.com/pqSKFUk.png");
@@ -330,7 +330,7 @@ a {
 
 .faithful .folderNumber {
 	left: 0px;
-	top: -5px;
+	top: -4px;
 	width: 152px;
 	height: 6px;
 	background: url("https://i.imgur.com/pqSKFUk.png");
