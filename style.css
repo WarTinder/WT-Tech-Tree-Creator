@@ -9,7 +9,7 @@
 	--main_bg: rgb(48, 48, 48);
 	--text_col: white;
 
-	--tech_tree_bg: rgb(36, 46, 51);
+	--tech_tree_bg: rgb(24, 35, 49);
 }
 
 html,
@@ -152,15 +152,21 @@ body {
 .type_researchable,
 .type_reserve,
 .type_event {
-	background-color: rgb(46, 66, 80);
+	background-image: url("https://i.imgur.com/05C2lCi.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .type_premium {
-	background-color: rgb(60, 52, 28);
+	background-image: url("https://i.imgur.com/VfFrfDu.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .type_squadron {
-	background-color: rgb(48, 70, 44);
+	background-image: url("https://i.imgur.com/o2zXWvC.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .badgeSide {
@@ -259,9 +265,9 @@ a {
 }
 
 .rank {
-	border-left: 2px solid white;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
+	border-left: 1px solid rgb(48, 59, 71);
+	border-right: 1px solid rgb(48, 59, 71);
+	border-bottom: 1px solid rgb(48, 59, 71);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -271,7 +277,7 @@ a {
 }
 
 .rank:first-of-type {
-	border-top: 2px solid white;
+	border-top: 1px solid rgb(48, 59, 71);
 }
 
 .branch {
@@ -314,31 +320,30 @@ a {
 	top: -1px;
 	right: -1px;
 	border: none;
+	background: url("https://i.imgur.com/pqSKFUk.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 	text-align: right;
 	width: 30px;
 	height: 30px;
-	background: -o-linear-gradient(bottom left, transparent 50%, #000000 0) top right/30px 30px no-repeat, transparent;
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(0, #000000)) top right/30px 30px no-repeat, transparent;
-	background: linear-gradient(to top right, transparent 50%, #000000 0) top right/30px 30px no-repeat, transparent;
 }
 
 .faithful .folderNumber {
-	left: -1px;
-	top: -12px;
-	width: 50px;
-	height: 12px;
-	background: rgb(46, 66, 80);
-	border: 1px black solid;
-	border-bottom: none;
-	font-size: 10px;
+	left: 0px;
+	top: -3px;
+	width: 152px;
+	height: 6px;
+	background: url("https://i.imgur.com/pqSKFUk.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-size: 0px;
 	text-align: left;
-	padding-left: 3px;
+	padding-left: 0px;
 }
 
 .vehicleBadge {
 	width: 150px;
 	height: 50px;
-	border: 1px black solid !important;
 }
 
 .vehicleBadge svg {
@@ -391,24 +396,25 @@ nav div:nth-child(odd) {
 	background-color: rgb(38, 74, 75);
 }
 
-.lineDiv {
-	width: 20px;
-	background-color: rgb(96, 125, 139);
-	height: 100%;
-	margin: auto;
-}
-
 .lineArrow {
 	width: 0px;
 	height: 0px;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid rgb(96, 125, 139);
+	border-left: 8.5px solid transparent;
+	border-right: 8.5px solid transparent;
+	border-top: 8px solid rgb(98, 129, 130);
+	margin: auto;
+}
+
+.lineDiv {
+	width: 9px;
+	background-color: rgb(98, 129, 130);
+	height: 100%;
+	padding-bottom: 11.4px;
 	margin: auto;
 }
 
 .rankNumber {
-	border-right: 2px solid white;
+	border-right: 1px solid rgb(48, 59, 71);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -431,6 +437,7 @@ nav div:nth-child(odd) {
 	-webkit-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	transform: rotate(180deg);
+	color: rgb(183, 183, 183);
 }
 
 #vehicleImageList td,
