@@ -727,11 +727,11 @@
 	} );
 	CKEDITOR.on( 'instanceReady', function ( e ) {
 		// First time
-		e.editor.document.getBody().setStyle( 'background-color', 'rgb(24, 35, 49)' );
+		e.editor.document.getBody().setStyle( 'background-color', 'rgb(36, 46, 51)' );
 		e.editor.document.getBody().setStyle( 'color', 'white' );
 		// in case the user switches to source and back
 		e.editor.on( 'contentDom', function () {
-			e.editor.document.getBody().setStyle( 'background-color', 'rgb(24, 35, 49)' );
+			e.editor.document.getBody().setStyle( 'background-color', 'rgb(36, 46, 51)' );
 			e.editor.document.getBody().setStyle( 'color', 'white' );
 		} );
 	} );
@@ -902,7 +902,7 @@
 				branchDiv.classList.add( 'branch' );
 				if ( branch.indexOf( 'premium' ) !== -1 && firstPremiumBranch ) {
 					firstPremiumBranch = false;
-					branchDiv.style.borderLeft = '1px solid rgb(48, 59, 71)';
+					branchDiv.style.borderLeft = '2px solid white';
 				}
 				const region = `rank_${ rank }_branch_${ branch }`;
 				if ( organizedVehicles[ region ] !== undefined ) {
@@ -1133,7 +1133,7 @@
 		let img = '';
 		const imgStyle = {
 			0: 'max-height: 70%; max-width: 80%',
-			1: 'max-height: 90%; max-width: 90%; position: absolute; bottom: 3px; left: 3px',
+			1: 'max-height: 100%; max-width: 100%',
 			2: 'height: 100%; width: 100%'
 		}[ settings.thumbnailStyle ];
 		if ( vehicle.thumbnail !== undefined ) img = `<img src="${ vehicle.thumbnail }" style="${ imgStyle }">`;
