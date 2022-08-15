@@ -1133,7 +1133,7 @@
 		let img = '';
 		const imgStyle = {
 			0: 'max-height: 70%; max-width: 80%',
-			1: 'max-height: 90%; max-width: 90%; top: 4px; left: 3px;',
+			1: 'max-height: 90%; max-width: 90%; top: 6px; left: 3px;',
 			2: 'height: 100%; width: 100%'
 		}[ settings.thumbnailStyle ];
 		if ( vehicle.thumbnail !== undefined ) img = `<img src="${ vehicle.thumbnail }" style="${ imgStyle }">`;
