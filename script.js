@@ -902,7 +902,7 @@
 				branchDiv.classList.add( 'branch' );
 				if ( branch.indexOf( 'premium' ) !== -1 && firstPremiumBranch ) {
 					firstPremiumBranch = false;
-					branchDiv.style.borderLeft = '2px solid rgb(48, 59, 71)';
+					branchDiv.style.borderLeft = '1px solid rgb(48, 59, 71)';
 				}
 				const region = `rank_${ rank }_branch_${ branch }`;
 				if ( organizedVehicles[ region ] !== undefined ) {
