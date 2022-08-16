@@ -727,11 +727,11 @@
 	} );
 	CKEDITOR.on( 'instanceReady', function ( e ) {
 		// First time
-		e.editor.document.getBody().setStyle( 'background-color', 'rgb(36, 46, 51)' );
+		e.editor.document.getBody().setStyle( 'background-color', 'rgb(24, 35, 49)' );
 		e.editor.document.getBody().setStyle( 'color', 'white' );
 		// in case the user switches to source and back
 		e.editor.on( 'contentDom', function () {
-			e.editor.document.getBody().setStyle( 'background-color', 'rgb(36, 46, 51)' );
+			e.editor.document.getBody().setStyle( 'background-color', 'rgb(24, 35, 49)' );
 			e.editor.document.getBody().setStyle( 'color', 'white' );
 		} );
 	} );
