@@ -144,7 +144,7 @@ blockquote {
 }
 
 body {
-	font-family: 'Arial';
+	font-family: 'Roboto Condensed', sans-serif;
 	background-color: var(--tech_tree_bg);
 	color: var(--text_col);
 }
@@ -385,15 +385,24 @@ nav {
 nav div {
 	background-color: rgb(5, 35, 36);
 	padding: 3px;
-	border-radius: 0 5px 5px 0;
-	border: 1px solid black;
+	/* border: 1px solid white; */
 	border-left: none;
 	cursor: pointer;
 	text-align: center;
 }
 
+table {
+	border: 0;
+}
+
 nav div:nth-child(odd) {
 	background-color: rgb(38, 74, 75);
+}
+
+nav div:hover {
+	background-color: white;
+	color: rgb(5, 35, 36);
+	transition-duration: 0.4s;
 }
 
 .lineArrow {
@@ -515,13 +524,16 @@ nav div:nth-child(odd) {
 
 .carpet {
 	position: absolute;
-	top: 0px;
+	top: 0;
+	bottom: 8px;
 	left: 0px;
-	width: calc(100% - 22px);
-	height: calc(100% - 32px);
-	margin: 16px 11px;
-	background-color: rgb(62, 77, 85);
-	border-radius: 3px;
+	width: calc(100% - 20px);
+	height: calc(100% - 30px);
+	padding: 5px;
+	margin: 9px 5px;
+	background-color: rgb(24, 35, 49);
+	/* border-radius: 3px; */
+	outline: 2px solid white;
 }
 
 .folderTooltipText .lineArrow,
