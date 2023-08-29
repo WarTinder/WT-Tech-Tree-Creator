@@ -150,8 +150,8 @@ body {
 }
 
 .type_researchable,
-.type_reserve,
-.type_event {
+.type_event,
+.type_reserve {
 	background-image: url("https://i.imgur.com/05C2lCi.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -165,6 +165,12 @@ body {
 
 .type_squadron {
 	background-image: url("https://i.imgur.com/o2zXWvC.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.type_event_alt_bg {
+	background-image: url("https://i.imgur.com/wUMWFbY.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
