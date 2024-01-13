@@ -893,7 +893,7 @@
 			const rankNumDiv = document.createElement( 'div' );
 			rankNumDiv.classList.add( 'rankNumber' );
 			const rankNumDivText = document.createElement( 'div' );
-			rankNumDivText.innerHTML = `Rank <b>${ romanize( rank ) }</b>`;
+			rankNumDivText.innerHTML = `Rank <span>${ romanize( rank ) }</span>`;
 			rankNumDivText.classList.add( 'rankNumberText' );
 			rankNumDiv.appendChild( rankNumDivText );
 			rankDiv.appendChild( rankNumDiv );
@@ -1142,7 +1142,8 @@
 			svg = createSvg( classIcons.find( classIcon => classIcon.id === vehicle.classIcon ) );
 		}
 		let brLabel = '';
-		if ( vehicle.type === 'reserve' ) brLabel = `<i>Reserve</i> (${ vehicle.br.toFixed( 1 ) })`;
+		if ( vehicle.type === 'reserve' && vehicle.br == 1 ) brLabel = `<span>Reserve</span>`;
+		else if ( vehicle.type === 'reserve' && vehicle.br != 1 ) brLabel = `<span>Reserve</span> (${ vehicle.br.toFixed( 1 ) })`;
 		else brLabel = vehicle.br.toFixed( 1 );
 		let branchLine = '';
 		if ( [ 'researchable', 'reserve' ].includes( vehicle.type ) ) branchLine = `badgeLine_${ vehicle.branch }`;
@@ -1160,7 +1161,7 @@ class="vehicleBadge type_${ vehicle.type } ${ branchLine }
 connected_${ vehicle.connection }"
 style="position:relative; ${ isClickable( vehicle ) ? 'cursor:pointer;' : '' }">
 <span class="vehicleName">${ vehicle.name }</span>
-<b class="vehicleBr">${ brLabel }</b>
+<span class="vehicleBr">${ brLabel }</span>
 ${ img }
 ${ svg }
 </td>
