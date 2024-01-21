@@ -19,142 +19,142 @@
 		{
 			id: 'lt',
 			name: 'Light Tank',
-			shapes: [ { type: 'rect', height: '9', width: '21', y: '3', x: '0', fill: '#ffeeee' } ]
+			shapes: [ { type: 'rect', height: '3', width: '9.6', y: '3', x: '7', fill: '#ffeeee' } ]
 		},
 		{
 			id: 'mt',
 			name: 'Medium Tank',
 			shapes: [
-				{ type: 'rect', height: '9', width: '21', y: '3', x: '0', fill: '#ffaaaa' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '0', fill: '#ffaaaa' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '15', fill: '#ffaaaa' }
+				{ type: 'rect', height: '3', width: '9.6', y: '2', x: '7', fill: '#ffaaaa' },
+				{ type: 'rect', height: '2', width: '3', y: '5', x: '7', fill: '#ffaaaa' },
+				{ type: 'rect', height: '2', width: '3', y: '5', x: '13.6', fill: '#ffaaaa' },
 			]
 		},
 		{
 			id: 'ht',
 			name: 'Heavy Tank',
 			shapes: [
-				{ type: 'rect', height: '9', width: '21', y: '3', x: '0', fill: '#ff6666' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '0', fill: '#ff6666' },
-				{ type: 'rect', height: '4', width: '6', y: '11', x: '15', fill: '#ff6666' },
-				{ type: 'rect', height: '4', width: '7', y: '0', x: '7', fill: '#ff6666' }
+				{ type: 'rect', height: '3', width: '9.6', y: '3', x: '7', fill: '#ff6666' },
+				{ type: 'rect', height: '2', width: '2.74', y: '6', x: '7', fill: '#ff6666' },
+				{ type: 'rect', height: '2', width: '2.74', y: '6', x: '13.85', fill: '#ff6666' },
+				{ type: 'rect', height: '3', width: '4.1', y: '0', x: '9.75', fill: '#ff6666' }
 			]
 		},
 		{
 			id: 'td',
 			name: 'Tank Destroyer',
 			shapes: [
-				{ type: 'rect', height: '5', width: '21', y: '10', x: '0', fill: '#bde9b5' },
-				{ type: 'line', y2: '10', x2: '0', y1: '0', x1: '21', 'stroke-width': '3', stroke: '#bde9b5' }
+				{ type: 'rect', height: '3', width: '9.6', y: '5', x: '7', fill: '#bde9b5' },
+				{ type: 'line', y2: '5.75', x2: '7.6', y1: '-0.5', x1: '16.3', 'stroke-width': '2', stroke: '#bde9b5' }
 			]
 		},
 		{
 			id: 'spaa',
 			name: 'Self Propelled Anti-Air',
 			shapes: [
-				{ type: 'rect', height: '5', width: '21', y: '10', x: '0', fill: '#c6a0ff' },
-				{ type: 'rect', height: '11', width: '4', y: '0', x: '4', fill: '#c6a0ff' },
-				{ type: 'rect', height: '11', width: '4', y: '0', x: '13', fill: '#c6a0ff' }
+				{ type: 'rect', height: '3', width: '9.6', y: '6', x: '7', fill: '#c6a0ff' },
+				{ type: 'rect', height: '6', width: '1.8', y: '0', x: '8.8', fill: '#c6a0ff' },
+				{ type: 'rect', height: '6', width: '1.8', y: '0', x: '13', fill: '#c6a0ff' }
 			]
 		},
 		{
 			id: 'fighter',
 			name: 'Fighter',
 			shapes: [
-				{ type: 'path', d: 'm0,7.5l10.5,-7.5l10.5,7.5l-10.5,7.5l-10.5,-7.5z', fill: '#ffac6f' }
+				{ type: 'path', d: 'm8,4.5l4.5,-4.5l4.5,4.5l-4.5,4.5l-4.5,-4.5z', fill: '#ffac6f' }
 			]
 		},
 		{
 			id: 'attacker',
 			name: 'Attacker',
 			shapes: [
-				{ type: 'path', d: 'm0,7.5l10.5,-5l10.5,5l-10.5,5l-10.5,-5z', fill: '#bde9b5' }
+				{ type: 'path', d: 'm6,4.5l6.3,-3l6.3,3l-6.3,3l-6.3,-3z', fill: '#bde9b5' }
 			]
 		},
 		{
 			id: 'bomber',
 			name: 'Bomber',
 			shapes: [
-				{ type: 'rect', height: '7.5', width: '21', y: '0', x: '0', fill: '#a3b1ff' },
-				{ type: 'path', d: 'm0,7.5l10.5,-7.5l10.5,7.5l-10.5,7.5l-10.5,-7.5z', fill: '#a3b1ff' }
+				{ type: 'rect', height: '4', width: '9', y: '-1', x: '8', fill: '#a3b1ff' },
+				{ type: 'path', d: 'm8,3.5l4.5,-4.5l4.5,4.5l-4.5,4.5l-4.5,-4.5z', fill: '#a3b1ff' }
 			]
 		},
 		{
 			id: 'ahel',
 			name: 'Attack Helicopter',
 			shapes: [
-				{ type: 'path', d: 'm0,7.5l10.5,-5l10.5,5l-10.5,5l-10.5,-5z', fill: '#f2f266' }
+				{ type: 'path', d: 'm6,4.5l6.3,-3l6.3,3l-6.3,3l-6.3,-3z', fill: '#f2f266' }
 			]
 		},
 		{
 			id: 'uhel',
 			name: 'Utility Helicopter',
 			shapes: [
-				{ type: 'rect', height: '7.5', width: '21', y: '0', x: '0', fill: '#9bf266' },
-				{ type: 'path', d: 'm0,7.5l10.5,-7.5l10.5,7.5l-10.5,7.5l-10.5,-7.5z', fill: '#9bf266' }
+				{ type: 'rect', height: '4', width: '9', y: '-1', x: '8', fill: '#9bf266' },
+				{ type: 'path', d: 'm8,3.5l4.5,-4.5l4.5,4.5l-4.5,4.5l-4.5,-4.5z', fill: '#9bf266' }
 			]
 		},
 		{
 			id: 'tboat',
 			name: 'Torpedo Boat',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M20 1L.75 7 20 13z', stroke: '#01d1de', fill: 'none' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 2L8 4.5 16 7z', stroke: '#01d1de', fill: 'none' }
 			]
 		},
 		{
 			id: 'gboat',
 			name: 'Gun Boat',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M20 1L.75 7 20 13z', stroke: '#a3b1ff', fill: '#a3b1ff' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 2L8 4.5 16 7z', stroke: '#a3b1ff', fill: '#a3b1ff' }
 			]
 		},
 		{
 			id: 'barge',
 			name: 'Barge',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M1 1h19v12H1z', stroke: '#f8cdae', fill: 'none' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M6 1h10v6.666666667H6z', stroke: '#f8cdae', fill: 'none' }
 			]
 		},
 		{
 			id: 'dd',
 			name: 'Frigate / Destroyer',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M20 1H7L.75 7 7 13h13z', stroke: '#f8a86d', fill: 'none' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5L9 0.5 6 3.5 9 6.5 16 6.5z', stroke: '#f8a86d', fill: 'none' }
 			]
 		},
 		{
 			id: 'cl',
 			name: 'Light Cruiser',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M20 1H7L.75 7 7 13h13z', stroke: '#f8a6a6', fill: 'none' },
-				{ type: 'path', 'stroke-width': '2', d: 'M15.75 1v12', stroke: '#f8a6a6' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5L9 0.5 6 3.5 9 6.5 16 6.5z', stroke: '#f8a6a6', fill: 'none' },
+				{ type: 'path', 'stroke-width': '1.25', d: 'M13.75 1v5', stroke: '#f8a6a6' }
 			]
 		},
 		{
 			id: 'ca',
 			name: 'Heavy Cruiser',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M20 1H7L.75 7 7 13h13z', stroke: '#ffaaaa', fill: 'none' },
-				{ type: 'path', 'stroke-width': '2', d: 'M16 1H20v12h-4z', stroke: '#ffaaaa', fill: '#ffaaaa' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5L9 0.5 6 3.5 9 6.5 16 6.5z', stroke: '#ffaaaa', fill: 'none' },
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5H15v6h1z', stroke: '#ffaaaa', fill: '#ffaaaa' }
 			]
 		},
 		{
 			id: 'cc',
 			name: 'Battlecruiser',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M20 1H7L.75 7 7 13h13z', stroke: '#fda9a9', fill: 'none' },
-				{ type: 'path', 'stroke-width': '2', d: 'M18 1H20v12h-2z', stroke: '#fda9a9', fill: '#ffaaaa' },
-				{ type: 'path', 'stroke-width': '2', d: 'M11 1H13v12h-2z', stroke: '#fda9a9', fill: '#ffaaaa' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5L9 0.5 6 3.5 9 6.5 16 6.5z', stroke: '#fda9a9', fill: 'none' },
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5H15v6h1z', stroke: '#fda9a9', fill: '#ffaaaa' },
+				{ type: 'path', 'stroke-width': '1.25', d: 'M12.5 0.5H11.5v6h1z', stroke: '#fda9a9', fill: '#ffaaaa' }
 			]
 		},
 		{
 			id: 'bb',
 			name: 'Battleship',
 			shapes: [
-				{ type: 'path', 'stroke-width': '2', d: 'M20 1H7L.75 7 7 13h13z', stroke: '#fd6565', fill: 'none' },
-				{ type: 'path', 'stroke-width': '2', d: 'M16 1v12', stroke: '#fd6565' },
-				{ type: 'path', 'stroke-width': '2', d: 'M12 1v12', stroke: '#fd6565' },
-				{ type: 'path', 'stroke-width': '2', d: 'M8 1v12', stroke: '#fd6565' }
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5L9 0.5 6 3.5 9 6.5 16 6.5z', stroke: '#fd6565', fill: 'none' },
+				{ type: 'path', 'stroke-width': '1.25', d: 'M16 0.5H15.5v6h0.5z', stroke: '#fd6565' },
+				{ type: 'path', 'stroke-width': '1.25', d: 'M13.25 0.5H12.75v6h0.5z', stroke: '#fd6565' },
+				{ type: 'path', 'stroke-width': '1.25', d: 'M10.5 0.5H10v6h0.5z', stroke: '#fd6565' }
 			]
 		}
 	];
@@ -163,7 +163,7 @@
 		menuVisible: true,
 		screenshotMode: false,
 		thumbnailStyle: '0',
-		badgeStyle: '0'
+		badgeStyle: '1'
 	};
 
 	init();
@@ -436,7 +436,7 @@
 						settings.menuVisible = loadedData.settings.menuVisible ?? true;
 						settings.screenshotMode = loadedData.settings.screenshotMode ?? false;
 						settings.thumbnailStyle = loadedData.settings.thumbnailStyle ?? '0';
-						settings.badgeStyle = loadedData.settings.badgeStyle ?? '0';
+						settings.badgeStyle = loadedData.settings.badgeStyle ?? '1';
 
 						updateMenuDisplay();
 						document.querySelector( '#settingsModal input[name="screenshotMode"]' ).checked = settings.screenshotMode;
@@ -446,7 +446,7 @@
 						settings.menuVisible = true;
 						settings.screenshotMode = false;
 						settings.thumbnailStyle = '0';
-						settings.badgeStyle = '0';
+						settings.badgeStyle = '1';
 					}
 
 					localStorage.setItem( 'settings', JSON.stringify( settings ) );
@@ -1149,31 +1149,40 @@
 		if ( [ 'researchable', 'reserve' ].includes( vehicle.type ) ) branchLine = `badgeLine_${ vehicle.branch }`;
 		else branchLine = `badgeLine_premium_${ vehicle.branch }`;
 		div.innerHTML = `<table>
-<tbody>
-<tr>
-<td rowspan="3" class="badgeSide"></td>
-<td class="badgeLine ${ branchLine }"></td>
-<td rowspan="3" class="badgeSide"></td>
-</tr>
-<tr>
-<td id="${ vehicle.id }"
-class="vehicleBadge type_${ vehicle.type } ${ branchLine }
-connected_${ vehicle.connection }"
-style="position:relative; ${ isClickable( vehicle ) ? 'cursor:pointer;' : '' }">
-<span class="vehicleName">${ vehicle.name }</span>
-<span class="vehicleBr">${ brLabel }</span>
-${ img }
-${ svg }
-</td>
-</tr>
-<tr>
-<td class="badgeLine ${ branchLine }"></td>
-</tr>
-</tbody>
-</table>`;
+		<tbody>
+		<tr>
+		<td rowspan="3" class="badgeSide"></td>
+		<td class="badgeLine ${ branchLine }"></td>
+		<td rowspan="3" class="badgeSide"></td>
+		</tr>
+		<tr>
+		<td id="${ vehicle.id }"
+		class="vehicleBadge type_${ vehicle.type } ${ branchLine }
+		connected_${ vehicle.connection }"
+		style="position:relative; ${ isClickable( vehicle ) ? 'cursor:pointer;' : '' }">
+		<span class="vehicleName">${ vehicle.name }</span>
+		<span class="vehicleBr">${ brLabel }</span>
+		${ img }
+		${ svg }
+		</td>
+		</tr>
+		<tr>
+		<td class="badgeLine ${ branchLine }"></td>
+		</tr>
+		</tbody>
+		</table>`;
 		if ( settings.badgeStyle === '1' ) div.classList.add( 'faithful' );
 		return div;
 	}
+	document.addEventListener('DOMContentLoaded', function() {
+		var spans = document.querySelectorAll('.vehicleName');
+	
+		spans.forEach(function(span) {
+		  if (span.scrollWidth > 140) {
+			span.classList.add('marquee');
+		  }
+		});
+	});
 	function createFolder ( folder ) {
 		const folderDiv = document.createElement( 'div' );
 		const tooltipText = document.createElement( 'span' );

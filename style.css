@@ -86,8 +86,8 @@ blockquote {
 	border-bottom: 4px transparent solid;
 	border-radius: 5px;
 	cursor: pointer;
-	-webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
-	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	/* -webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0)); */
 }
 
 .classIconContainer input:checked~svg {
@@ -296,29 +296,38 @@ a {
 
 .vehicleName {
 	z-index: 1;
-	text-shadow: 0px 0px 11px #000000;
-	max-width: 140px;
+	/* text-shadow: 0px 0px 11px #000000; */
 	position: absolute;
-	top: 0px;
-	left: 4px;
+	top: 3px;
+	font-size: 1rem;
+	white-space: nowrap;
+    display: inline-block;
+	/* overflow-x: hidden; */
 }
 
 .faithful .vehicleName {
 	left: initial;
-	right: 4px;
-	text-align: right;
+	right: 7px;
+	text-align: left;
+}
+
+.faithful .marquee {
+	left: 7px;
+	right: initial;
+	text-align: left;
 }
 
 .vehicleBr {
 	z-index: 1;
 	text-shadow: 0px 0px 11px #000000;
 	position: absolute;
-	bottom: 3px;
+	bottom: 6px;
 	right: 2px;
+	color: #c0c0c0;
 }
 
 .faithful .vehicleBr {
-	right: 30px;
+	right: 21px;
 }
 
 .folderNumber {
@@ -347,22 +356,55 @@ a {
 	padding-left: 0px;
 }
 
+
 .vehicleBadge {
-	width: 150px;
-	height: 50px;
+    width: 150px;
+    height: 50px;
+    padding-left: 7px;
+    padding-right: 7px;
+	white-space: nowrap;
+	overflow-x: clip;
 }
 
+.vehicleBadge:hover {
+	outline: 2px solid #ffd453;
+}
+
+ 
 .vehicleBadge svg {
 	position: absolute;
 	bottom: 19px;
 	right: 3px;
 	z-index: 1;
-	-webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
-	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	/* -webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+	filter: drop-shadow(0px 0px 5px rgb(0, 0, 0)); */
 }
 
 .faithful .vehicleBadge svg {
 	bottom: 4px;
+}
+
+.marquee {
+    animation: marquee 2s linear forwards;
+    animation-play-state: paused;
+}
+  
+td:hover .marquee {
+    animation-play-state: running;
+}
+
+td:not(:hover) .marquee {
+    animation: none;
+}
+
+@keyframes marquee {
+    0% {
+      	transform: translateX(0%);
+    }
+    100% {
+		/* left: 7px; */
+      	transform: translateX(calc(-100% + 140px));
+    }
 }
 
 /*.fillerDiv {}*/
