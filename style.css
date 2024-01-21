@@ -458,7 +458,7 @@ nav div:hover {
 	height: 0px;
 	border-left: 8.5px solid transparent;
 	border-right: 8.5px solid transparent;
-	border-top: 8px solid rgb(98, 129, 130);
+	border-top: 8.5px solid rgb(98, 129, 130);
 	margin: auto;
 }
 
@@ -466,7 +466,7 @@ nav div:hover {
 	width: 9px;
 	background-color: rgb(98, 129, 130);
 	height: 100%;
-	padding-bottom: 11.4px;
+	padding-bottom: 10.5px;
 	margin: 8px auto auto auto;
 }
 
